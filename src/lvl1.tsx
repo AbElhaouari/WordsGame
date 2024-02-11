@@ -19,7 +19,7 @@ export default function Lvl1() {
   };
 
   const shuffledWord = ShuffleWord(merged);
-  const [splitted] = useState(shuffledWord.split(""));
+  const [splitted, setSplitted] = useState(shuffledWord.split(""));
 
   console.log(aWord);
   const listen = (s: string) => {

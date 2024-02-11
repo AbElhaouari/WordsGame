@@ -19,7 +19,7 @@ export default function Lvl1() {
   };
 
   const shuffledWord = ShuffleWord(merged);
-  const [splitted, setSplitted] = useState(shuffledWord.split(""));
+  const [splitted] = useState(shuffledWord.split(""));
 
   console.log(aWord);
   const listen = (s: string) => {
@@ -58,9 +58,9 @@ export default function Lvl1() {
           <div className="placeHolder-word">{correctWord[3]}</div>
         </div>
         <div className="letters">
-          {splitted.map((e) => {
+          {splitted.map((e, key) => {
             return (
-              <div className="">
+              <div className="" key={key}>
                 <div onClick={() => listen(e)} className="lt">
                   {e.toUpperCase()}
                 </div>

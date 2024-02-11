@@ -19,8 +19,8 @@ export default function Lvl1() {
   };
 
   const shuffledWord = ShuffleWord(merged);
-  const [splitted, setSplitted] = useState(shuffledWord.split(""));
-
+  const [splitted, setSplitted] = useState([""]);
+  setSplitted(shuffledWord.split(""));
   console.log(aWord);
   const listen = (s: string) => {
     if (aWord.length <= 3) {

@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.letters {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  border-radius: 10px;
+  color: azure;
+  background-color: rgb(39, 39, 39);
+}
+.lt {
+  padding: 10px;
+}
+.lt:hover {
+  background-color: beige;
+  color: black;
+  border-radius: 10px;
+}
+.placement-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.letter-placment {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  padding: 40px;
+  background-color: antiquewhite;
+}
+.word-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.placeHolder-word {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: antiquewhite;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.title {
+  font-size: 100px;
+  color: aliceblue;
+}
+.play {
+  background-color: brown;
+  color: aliceblue;
+  padding: 25px;
+  border-radius: 8px;
+  font-size: 50px;
+}
+.play:hover {
+  background-color: rgb(173, 70, 70);
+  color: azure;
+}
